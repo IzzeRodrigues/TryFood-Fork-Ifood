@@ -13,7 +13,7 @@
 <body>
   <div class="half-bg">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
         <div class="container">
           <!--Responsividade do navbar-->
           <button class="navbar-toggler toggle d-block d-sm-none" type="button" data-bs-toggle="collapse"
@@ -106,14 +106,7 @@
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- div fechando o background cinza -->
-  </div>
-  
-  <!-- BEBIDAS - FARMACIA - PETSHOP -->
-
-   {{-- <div class="container">
+    <!-- {{-- <div class="container">
     <div class="row mt-4 d-flex justify-content-center" style="margin-bottom: 80px;">
       <div class="col-md-2 col-4">
         <div class="card border-0">
@@ -155,15 +148,31 @@
         </div>
       </div>
     </div>
-  </div> --}}
+  </div> --}} -->
+  </div>
+  
+  <!-- div fechando o background cinza -->
+  </div>
+  
+  <!-- BEBIDAS - FARMACIA - PETSHOP -->
 
-<div class="container">
-    <hr>
-    <h4 class="mt-5">Os piores restaurantes</h4>
+
+<div class="bg-light">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>
 
 </main>  
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="JS/script.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
   <script src="js/bootstrap.js"></script>
 <!--<footer>
