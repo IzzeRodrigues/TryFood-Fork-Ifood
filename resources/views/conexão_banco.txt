@@ -1,0 +1,36 @@
+Conexão com o Banco para Relaizar Login e importar Restaurantes**
+
+              <?php     
+                    $server = "localhost";
+                    $user = "root";
+                    $password = "";
+                    $database = "db_tryfood";
+                    $mysqli = new mysqli ($server,$user,$password,$database);
+                    if (mysqli_connect_errno()) trigger_error(mysqli_connect_errno());
+                        $banco = "SELECT * FROM tb_restaurantes";
+                        $connection = $mysqli -> query($banco);
+                    while($lugares = $connection -> fetch_array()){
+                        echo "<div class='col-4 d-flex justify-content-center'>
+                        <div class='row col-12 img-container rounded-4'>
+                            <div class='col-4'>
+                                <img src='$lugares[ds_imagem]'  class='rounded img-fluid'> 
+                            </div>
+                            <div class='col-8 d-flex flex-column justify-content-center'>
+                                <div>
+                                    <p class='fw-bold m-0'>$lugares[nm_restaurante]</p>
+                                </div>
+                                <div class='row justify-content-evenly'>
+                                    <div class='col-3 text-warning p-0'>$lugares[ds_avaliacao]</div> 
+                                    <div class='col-3 text-muted p-0'>$lugares[ds_tipo]</div> 
+                                    <div class='col-3 text-muted p-0'>$lugares[ds_distancia]</div> 
+                                </div>
+                                <div class='row'>
+                                    <div class='col text-muted'>$lugares[ds_tempo]</div> 
+                                    <div class='col text-success'>$lugares[ds_frete]</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>";
+                    }
+
+                ?>
